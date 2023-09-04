@@ -2,6 +2,10 @@
 
 Meme Generator - Create and customize hilarious memes with ease. Choose images, add text, and share your creations with friends."
 
+### App
+
+https://memegeneratorpzytek-cbe9e8b98ef8.herokuapp.com/
+
 ### How to run
 
 To run the application locally, follow these steps:
@@ -21,7 +25,3 @@ To run the application locally, follow these steps:
 - HTML
 - CSS (SASS)
 - React
-
-### App
-
-https://github.com/pzytek/meme_generator.git
