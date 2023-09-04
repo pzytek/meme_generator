@@ -1,0 +1,128 @@
+$font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Set font to 1rem = 10px */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: $font-main;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #f5e1e1;
+}
+
+.nav {
+  display: flex;
+  box-shadow: 0px 2.9px 7.6px rgba(0, 0, 0, 0.5);
+  color: #d4cfc6;
+  align-items: center;
+  height: 10vh;
+  background-color: #4e1ba7;
+  margin-bottom: 1rem;
+
+  &__logo {
+    height: 8vh;
+    margin-left: 1rem;
+  }
+
+  &__header {
+    position: relative;
+    left: 50%;
+    transform: translate(calc(-50% - 8vh));
+  }
+}
+
+.form {
+  font-family: $font-main;
+  font-size: 1.5rem;
+  position: sticky;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1rem;
+  top: 0;
+  z-index: 1;
+  display: grid;
+  grid-template: 4rem / 1fr 1fr;
+  width: 100%;
+
+  &__input {
+    height: 3rem;
+    margin: 0 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #d5d4d8;
+    text-indent: 5px;
+    outline: none;
+    min-width: 0;
+  }
+
+  &__button {
+    height: 3rem;
+    margin: 0 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    grid-column: 1 / -1;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #5f16df, 1.2%, #622cc0);
+    min-width: 0;
+  }
+}
+
+.meme {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &--image {
+    max-width: 100%;
+  }
+
+  &--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+      -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+      2px 2px 5px #000;
+  }
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+//smartphones
+@media (max-width: 550px) {
+  .nav__header {
+    font-size: 1.5rem;
+  }
+  .form {
+    font-size: 1rem;
+  }
+}
