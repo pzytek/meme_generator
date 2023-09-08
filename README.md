@@ -4,7 +4,7 @@ Meme Generator - Create and customize hilarious memes with ease. Choose images, 
 
 ### App
 
-https://memegeneratorpzytek-cbe9e8b98ef8.herokuapp.com/
+https://meme-generator-psi-ebon.vercel.app/
 
 ### How to run
 
